@@ -36,8 +36,8 @@ export default function Home() {
           <a href="#how" onClick={() => setMenuOpen(false)}>Cách học</a>
         </nav>
         <div className="nav-actions">
-          <button className="login-btn" onClick={() => document.getElementById("join")?.scrollIntoView({ behavior: "smooth" })}>Đăng nhập</button>
-          <button className="primary-btn nav-cta" onClick={() => document.getElementById("join")?.scrollIntoView({ behavior: "smooth" })}>Bắt đầu miễn phí <ArrowRight size={16} /></button>
+          <button className="login-btn" onClick={() => location.href="/login"}>Đăng nhập</button>
+          <button className="primary-btn nav-cta" onClick={() => location.href="/register"}>Bắt đầu miễn phí <ArrowRight size={16} /></button>
         </div>
         <button className="mobile-menu" aria-label="Mở menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
       </header>
