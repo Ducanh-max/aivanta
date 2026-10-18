@@ -18,3 +18,4 @@ drop trigger if exists on_auth_user_created on auth.users;create trigger on_auth
 -- Register the owner, then promote that account manually:
 -- update public.profiles set role='admin' where id=(select id from auth.users where email='YOUR_OWNER_EMAIL');
 -- Never let users modify their own role; keep secret keys on the server.
+revoke execute on function public.handle_new_user() from public, anon, authenticated;
