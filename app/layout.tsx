@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./platform.css";
 
 export const metadata: Metadata = {
   title: "AIVANTA — Học tiếng Anh theo cách của bạn",
